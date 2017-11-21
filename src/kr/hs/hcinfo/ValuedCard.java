@@ -34,7 +34,11 @@ public class ValuedCard extends BasicCard implements Comparable<ValuedCard>{
 		// TODO Auto-generated method stub
 		return value - o.getValue();
 	}
-	
+	public boolean isWin(ValuedCard o){
+		if(compareTo(o)>0)
+			return true;
+		return false;
+	}
 	
 }
 

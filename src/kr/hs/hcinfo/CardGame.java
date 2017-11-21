@@ -7,7 +7,7 @@ public class CardGame {
 		System.out.println("this is CardGame----");
 		ValuedCard card1 = new ValuedCard("A", 1, 15);
 		ValuedCard card2 = new ValuedCard("B", 8, 30);
-		if(card1.compareTo(card2)>0){
+		if(card1.isWin(card2)){
 			System.out.println(card1+" Win!!");
 		}else{
 			System.out.println(card2+" Win!!");
