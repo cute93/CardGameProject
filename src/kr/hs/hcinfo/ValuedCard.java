@@ -39,7 +39,6 @@ public class ValuedCard extends BasicCard implements Comparable<ValuedCard>{
 			return true;
 		return false;
 	}
-	
 }
 
 

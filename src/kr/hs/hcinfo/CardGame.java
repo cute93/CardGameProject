@@ -4,16 +4,12 @@ public class CardGame {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("this is CardGame----");
-		ValuedCard card1 = new ValuedCard("A", 1, 15);
-		ValuedCard card2 = new ValuedCard("B", 8, 30);
-		if(card1.isWin(card2)){
-			System.out.println(card1+" Win!!");
-		}else{
-			System.out.println(card2+" Win!!");
-		}
-	
-		
+		String shapes[] = {"C", "H", "D", "S"};
+		int nums[] = {2,3,4};
+		CardDeck myDeck = new CardDeck(shapes, nums);
+		myDeck.showAll();
+		myDeck.shuffle();
+		myDeck.showAll();
 	}
 
 }
